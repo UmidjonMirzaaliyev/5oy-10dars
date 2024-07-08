@@ -83,34 +83,7 @@ header ul a:hover {
   color: #777;
 }
 
-.product-color {
-  color: #333;
-}
 
-.product-amount {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.amount-select {
-  width: 50px;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.remove-button {
-  background: none;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-}
-
-.remove-button:hover {
-  text-decoration: underline;
-}
 
 .product-price {
   font-size: 18px;
