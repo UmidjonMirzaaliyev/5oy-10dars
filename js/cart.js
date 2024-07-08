@@ -4,12 +4,13 @@ const cartItem = document.getElementById("cart-items");
 cart = JSON.parse(cart);
 cart.forEach((product) => {
   cartItem.innerHTML += `
-    <li>
-       <img class="product-img" src="${product.attribute.image}" alt="">
-        </li>
-    <li>
-        <h1>${product.attribute.title}</h1>
-    </li>
-        
+        <div class="cart-item" id="cart-item-template"">
+        <img src="${product.attribute.image}" alt="Product Image" class="product-image">
+        <div class="product-details">
+            <h3 class="product-name">${product.attribute.title}</h3>
+            <p class="product-brand">${product.attribute.company}</p>
+        </div>
+        <div class="product-price">${product.attribute.price}$</div>
+    </div>
     `;
 });
